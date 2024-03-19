@@ -1,0 +1,18 @@
+
+
+1) Open Terminal on Mac
+2) ssh-keygen -t ed25519 -C "alexbonella2806@gmail.com"  // Path /home/abola8/.ssh/id_ed25519
+3) eval "$(ssh-agent -s)"
+4) open ~/.ssh/config - if not exist then touch ~/.ssh/config
+5) ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+6) pbcopy < ~/.ssh/id_ed25519.pub
+
+
+git config --global user.email "hola@email.com"
+
+
+# List your SSH Keys
+- ls -al ~/.ssh
+
+# Github Config
+git config --global user.name "Alexander XYZ"
